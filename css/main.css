@@ -1,0 +1,106 @@
+/*----------- BASIC SETUP -----------*/
+
+:root {
+    --pink: #A65170;
+    --black: #525559;
+    --gray: #D9D8D7;
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url(../assets/fonts/LobsterTwo-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'lobster';
+    font-size: 25px;
+    color: var(--black);
+}
+
+/*----------- FIRST PAGE -----------*/
+
+body {
+    height: 100vh;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.dr-mom {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    color: var(--pink);
+    font-size: 130%;
+}
+
+.mom {
+    width: 32%;
+    position: absolute;
+    left: 12%;
+    top: 19%;
+    transform: scale(1.1);
+}
+
+.wish {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 14.8%;
+    color: var(--pink);
+    font-size: 240%;
+    letter-spacing: 2px;
+}
+
+.wishp {
+    width: 13%;
+    position: absolute;
+    bottom: 280px;
+    right: 15%;
+    line-height: 150%;
+    font-weight: 100;
+    text-align: right;
+    word-spacing: 2px;
+}
+
+.and {
+    position: absolute;
+    color: var(--pink);
+    bottom: 200px;
+    right: 15%;
+    font-size: 140%;
+    font-family: arial;
+}
+
+.tell-smtng {
+    display: inline-block;
+    position: absolute;
+    bottom: 150px;
+    right: 15%;
+    word-spacing: 2px;
+}
+
+.smtng:link,
+.smtng:visited {
+    text-decoration: none;
+    color: var(--black);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--pink);
+    border-radius: 1px;
+    transition: broder ;
+}
+
+.smtng:hover {
+    border: transparent;
+}

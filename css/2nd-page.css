@@ -1,0 +1,197 @@
+/*----------- BASIC SETUP -----------*/
+
+:root {
+    --pink: #A65170;
+    --black: #525559;
+    --gray: #D9D8D7;
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url(../assets/fonts/LobsterTwo-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'lobster';
+    font-size: 25px;
+    color: var(--black);
+}
+
+
+/*----------- HEADER -----------*/
+
+.dr-mom {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    color: var(--pink);
+    font-size: 130%;
+}
+
+header {
+    height: 500px;
+    position: relative;
+}
+
+.b-care {
+    position: absolute;
+    border-radius: 50%;
+    width: 30%;
+    left: 15%;
+    top: 30%;
+}
+
+.b-care-p {
+    width: 20%;
+    position: absolute;
+    right: 20%;
+    top: 60%;
+    line-height: 150%;
+    word-spacing: 2px;
+    text-align: right;
+}
+
+.b-care-p:before {
+    content: "\201C";
+    display: block;
+    width: 10px;
+    font-size: 200%;
+    color: var(--pink);
+    position: absolute;
+    top: -20px;
+    left: -40px;
+}
+
+.b-care-p:after {
+    content: "\201D";
+    display: block;
+    width: 10px;
+    font-size: 200%;
+    color: var(--pink);
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+}
+
+/*----------- ANGEL -----------*/
+
+.angel {
+    height: 500px;
+    margin: 100px 0;
+    position: relative;
+}
+
+.angel-q {
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    left: 20%;
+    top: 27%;
+    line-height: 150%;
+    word-spacing: 2px;
+    text-align: left;
+}
+
+.angel-q:before {
+    content: "\201C";
+    display: block;
+    width: 10px;
+    font-size: 200%;
+    color: var(--pink);
+    position: absolute;
+    top: -20px;
+    left: -40px;
+}
+
+.angel-q:after {
+    content: "\201D";
+    display: block;
+    width: 10px;
+    font-size: 200%;
+    color: var(--pink);
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+}
+
+.angel-m {
+    width: 37%;
+    position: absolute;
+    right: 10%;
+}
+
+/*----------- FRIEND -----------*/
+
+.friend {
+    height: 500px;
+    position: relative;
+}
+
+.friend-m {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+}
+
+.fr-q {
+    width: 20%;
+    position: absolute;
+    right: 21%;
+    top: 30%;
+    line-height: 150%;
+    word-spacing: 2px;
+    text-align: right;
+}
+
+.fr-q:before {
+    content: "\201C";
+    display: block;
+    width: 10px;
+    font-size: 200%;
+    color: var(--pink);
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+.fr-q:after {
+    content: "\201D";
+    display: block;
+    width: 10px;
+    font-size: 200%;
+    color: var(--pink);
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+}
+
+/*----------- FOOTER -----------*/
+
+footer {
+    height: 700px;
+    position: relative;
+    color: var(--pink);
+}
+
+footer p {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    font-size: 500%;
+}
+
+footer h1 {
+    position: absolute;
+    top: 50%;
+    right: 43%;
+    font-size: 300%;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--pink);
+}

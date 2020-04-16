@@ -80,6 +80,7 @@ header {
     right: -30px;
 }
 
+
 /*----------- ANGEL -----------*/
 
 .angel {
@@ -193,5 +194,4 @@ footer h1 {
     right: 43%;
     font-size: 300%;
     padding-bottom: 10px;
-    border-bottom: 5px solid var(--pink);
 }

@@ -24,6 +24,35 @@ body {
     color: var(--black);
 }
 
+/*----------- ANIMATION -----------*/
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translatex(-100%);
+    }
+    80% {
+        transform: translatex(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translatex(0%);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translatex(100px);
+    }
+    80% {
+        transform: translatex(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
 
 /*----------- HEADER -----------*/
 
@@ -33,6 +62,8 @@ body {
     left: 4%;
     color: var(--pink);
     font-size: 130%;
+
+    animation: moveInLeft 1s ease-in;
 }
 
 header {
@@ -56,6 +87,8 @@ header {
     line-height: 150%;
     word-spacing: 2px;
     text-align: right;
+
+    animation: moveInRight 1s ease-in;
 }
 
 .b-care-p:before {
@@ -98,6 +131,8 @@ header {
     line-height: 150%;
     word-spacing: 2px;
     text-align: left;
+
+    animation: moveInLeft 1s ease-in;
 }
 
 .angel-q:before {
@@ -149,6 +184,8 @@ header {
     line-height: 150%;
     word-spacing: 2px;
     text-align: right;
+
+    animation: moveInRight 1s ease-in;
 }
 
 .fr-q:before {

@@ -54,6 +54,18 @@ body {
     }
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /*----------- HEADER -----------*/
 
 .dr-mom {
@@ -132,7 +144,8 @@ header {
     word-spacing: 2px;
     text-align: left;
 
-    animation: moveInLeft 1s ease-in;
+    animation: moveInLeft 1s ease-in 2s;
+    animation-fill-mode: backwards;
 }
 
 .angel-q:before {
@@ -185,7 +198,8 @@ header {
     word-spacing: 2px;
     text-align: right;
 
-    animation: moveInRight 1s ease-in;
+    animation: moveInRight 1s ease-in 4.5s;
+    animation-fill-mode: backwards;
 }
 
 .fr-q:before {
@@ -223,6 +237,8 @@ footer p {
     top: 20%;
     right: 25%;
     font-size: 500%;
+    animation: fadeOut 3s ease-in 5.5s;
+    animation-fill-mode: backwards;
 }
 
 footer h1 {
@@ -231,4 +247,6 @@ footer h1 {
     right: 43%;
     font-size: 300%;
     padding-bottom: 10px;
+    animation: fadeOut 3s ease-in 5.5s;
+    animation-fill-mode: backwards;
 }
